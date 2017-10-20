@@ -62,7 +62,8 @@ export default class LessCompiler extends CompilerBase {
 
     return {
       code: source,
-      mimeType: 'text/css'
+      mimeType: 'text/css',
+      dependentFiles: result.imports
     };
   }
 
